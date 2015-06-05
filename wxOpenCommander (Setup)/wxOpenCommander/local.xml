@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webupdate version="1.0">
+  <appname>wxOpenCommander</appname>
+  <appfile>wxOpenCommander</appfile>
+  <xrc>webupdatedlg.xrc</xrc>
+  <res>wxWebUpdateSimpleDlg</res>
+  <restart>1</restart>
+  <savelog>0</savelog>
+  <remoteuri>http://aurgo.dyndns.org/wxopencommander/updater.xml</remoteuri>
+  <keywords></keywords>
+  <local-package id="wxOpenCommander">
+    <version>0.1.19</version>
+  </local-package>
+</webupdate>

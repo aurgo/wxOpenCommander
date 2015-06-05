@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE webupdate PUBLIC "-//WebUpdate//DTD WebUpdater 1.0//EN" "http://wxcode.sourceforge.net/components/webupdate/remote.dtd">
+<!-- $Id: script1.xml 374 2006-02-25 10:53:33Z frm $ -->
+
+<webupdate version="1.0">
+
+    <!-- our customized messages in multiple languages ! -->
+    <msg-update-available lang="en">Some updates for "$(appname)" are available; don't miss them !</msg-update-available>
+    <msg-update-notavailable lang="en">You have the most updated version of "$(appname)"...</msg-update-notavailable>
+
+    <!-- this is just for wxWebUpdate debugging purpose ! -->
+    <msg-update-available lang="test">Some updates for "$(appname)" are available; don't miss them !</msg-update-available>
+    <msg-update-notavailable lang="test">You have the most updated version of "$(appname)"...</msg-update-notavailable>
+
+    <!-- for an example of XML webupdate script with multiple packages see script2.xml -->
+    <package id="wxOpenCommander">
+        <latest-version importance="high">0.1.19</latest-version>
+
+        <!-- our downloads (1 per platform) -->
+        <latest-download>
+
+            <uri>http://aurgo.dyndns.org/wxopencommander/wxOpenCommander.exe</uri>
+            <platform name="msw"/>
+            <md5>504311f0533033948510a892d5b70f6d</md5>
+
+            <actions>
+            <run/>
+            </actions>
+
+        </latest-download>
+
+        <!-- description for this package; don't break lines or you'll get some empty spaces in the final description string -->
+        <description lang="en">The package containing the binaries for "$(appname)"... if you need to show to the user a link to your changelog, then the right place is this: URLs like http://wxcode.sourceforge.net are automatically highlighted and made clickable...</description>
+        <description lang="test"></description>
+    </package>
+
+</webupdate>
